@@ -9,7 +9,7 @@
   <a href="https://www.linkedin.com/in/kankatala-ganesh-giridhar-071876322" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://leetcode.com/u/Ganesh2006646/" target="_blank">
+  <a href="https://leetcode.com/u/K_Ganesh_06/" target="_blank">
     <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" />
   </a>
   <a href="mailto:kankatalaganeshgiridhar@gmail.com">
@@ -83,8 +83,8 @@ I engineer high-performance cognitive systems, custom RAG pipelines, and interac
 ### 📊 GitHub Analytics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Ganesh2006646&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f0e26" alt="Ganesh's GitHub Stats" height="195" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ganesh2006646&layout=compact&theme=tokyonight&hide_border=true&bg_color=0f0e26" alt="Ganesh's Top Languages" height="195" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Ganesh2006646&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f0e26" alt="Ganesh's GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ganesh2006646&theme=tokyonight&hide_border=true&bg_color=0f0e26" alt="Ganesh's Top Languages" width="48%" />
 </p>
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=Ganesh2006646&theme=tokyonight&hide_border=true&background=0f0e26" alt="Ganesh's GitHub Streak" width="97%" />
