@@ -83,8 +83,8 @@ I engineer high-performance cognitive systems, custom RAG pipelines, and interac
 ### 📊 GitHub Analytics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Ganesh2006646&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f0e26" alt="Ganesh's GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ganesh2006646&theme=tokyonight&hide_border=true&bg_color=0f0e26" alt="Ganesh's Top Languages" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Ganesh2006646&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f0e26" alt="Ganesh's GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ganesh2006646&theme=tokyonight&hide_border=true&bg_color=0f0e26" alt="Ganesh's Top Languages" />
 </p>
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=Ganesh2006646&theme=tokyonight&hide_border=true&background=0f0e26" alt="Ganesh's GitHub Streak" width="97%" />
