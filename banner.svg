@@ -1,111 +1,134 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#080711" />
-      <stop offset="50%" stop-color="#0f0e26" />
-      <stop offset="100%" stop-color="#05050d" />
+    <!-- Deep space gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0118"/>
+      <stop offset="30%" stop-color="#0d1b2a"/>
+      <stop offset="60%" stop-color="#1b0a3c"/>
+      <stop offset="100%" stop-color="#0a0118"/>
     </linearGradient>
 
-    <!-- Text Gradient for Name -->
-    <linearGradient id="name-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f2fe" />
-      <stop offset="50%" stop-color="#4facfe" />
-      <stop offset="100%" stop-color="#a154f2" />
+    <!-- Neon cyan accent -->
+    <linearGradient id="cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#00c3ff"/>
     </linearGradient>
 
-    <!-- Subtitle/Accent Gradient -->
-    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f2fe" />
-      <stop offset="100%" stop-color="#05ffc3" />
+    <!-- Name gradient -->
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#e0e7ff"/>
+      <stop offset="100%" stop-color="#c4b5fd"/>
     </linearGradient>
 
-    <!-- Glow Filters -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    <!-- Purple-pink accent -->
+    <linearGradient id="purpleAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <!-- Glow filters -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
-    <filter id="glow-subtle" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
 
-    <!-- Cyberpunk grid pattern -->
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.02" />
+    <!-- Dot grid pattern -->
+    <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="0.6" fill="#ffffff" opacity="0.08"/>
+    </pattern>
+
+    <!-- Subtle horizontal scan lines -->
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="4" y2="0" stroke="#ffffff" stroke-width="0.3" opacity="0.03"/>
     </pattern>
   </defs>
 
   <!-- Background -->
-  <rect width="800" height="250" fill="url(#bg-grad)" />
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="1200" height="300" fill="url(#dots)"/>
+  <rect width="1200" height="300" fill="url(#scanlines)"/>
 
-  <!-- Grid overlay -->
-  <rect width="800" height="250" fill="url(#grid)" />
+  <!-- Ambient glow orbs -->
+  <circle cx="200" cy="150" r="180" fill="#7c3aed" opacity="0.04" filter="url(#softGlow)"/>
+  <circle cx="900" cy="100" r="150" fill="#00f0ff" opacity="0.03" filter="url(#softGlow)"/>
+  <circle cx="600" cy="250" r="120" fill="#ec4899" opacity="0.025" filter="url(#softGlow)"/>
 
-  <!-- Abstract Cybernetic Lines / Graph Nodes (The Linear Paradigm) -->
-  <g stroke="#4facfe" stroke-width="0.75" opacity="0.15">
-    <line x1="580" y1="50" x2="680" y2="80" />
-    <line x1="680" y1="80" x2="630" y2="170" />
-    <line x1="630" y1="170" x2="720" y2="120" />
-    <line x1="720" y1="120" x2="580" y2="50" />
-    <line x1="680" y1="80" x2="750" y2="60" />
-    <line x1="720" y1="120" x2="750" y2="60" />
-    <line x1="630" y1="170" x2="560" y2="200" />
-    <line x1="580" y1="50" x2="520" y2="110" />
-    <line x1="520" y1="110" x2="560" y2="200" />
+  <!-- Geometric constellation — right side -->
+  <g stroke="#00f0ff" stroke-width="0.5" opacity="0.12">
+    <line x1="850" y1="40" x2="950" y2="75"/>
+    <line x1="950" y1="75" x2="1020" y2="45"/>
+    <line x1="950" y1="75" x2="980" y2="160"/>
+    <line x1="980" y1="160" x2="1080" y2="130"/>
+    <line x1="1080" y1="130" x2="1020" y2="45"/>
+    <line x1="980" y1="160" x2="920" y2="220"/>
+    <line x1="920" y1="220" x2="1050" y2="240"/>
+    <line x1="1050" y1="240" x2="1080" y2="130"/>
+    <line x1="850" y1="40" x2="800" y2="120"/>
+    <line x1="800" y1="120" x2="850" y2="200"/>
+    <line x1="850" y1="200" x2="920" y2="220"/>
+    <line x1="800" y1="120" x2="950" y2="75"/>
   </g>
 
-  <!-- Glowing Nodes -->
-  <g fill="#00f2fe" opacity="0.6" filter="url(#glow-subtle)">
-    <circle cx="580" cy="50" r="4" fill="#00f2fe" />
-    <circle cx="680" cy="80" r="5.5" fill="#a154f2" />
-    <circle cx="630" cy="170" r="4" fill="#00f2fe" />
-    <circle cx="720" cy="120" r="4.5" fill="#05ffc3" />
-    <circle cx="750" cy="60" r="3" fill="#4facfe" />
-    <circle cx="560" cy="200" r="3.5" fill="#a154f2" />
-    <circle cx="520" cy="110" r="3.5" fill="#05ffc3" />
+  <!-- Constellation nodes -->
+  <g filter="url(#glow)">
+    <circle cx="850" cy="40" r="2.5" fill="#00f0ff" opacity="0.7"/>
+    <circle cx="950" cy="75" r="3" fill="#a855f7" opacity="0.8"/>
+    <circle cx="1020" cy="45" r="2" fill="#00f0ff" opacity="0.6"/>
+    <circle cx="980" cy="160" r="3.5" fill="#00f0ff" opacity="0.7"/>
+    <circle cx="1080" cy="130" r="2" fill="#ec4899" opacity="0.6"/>
+    <circle cx="920" cy="220" r="2.5" fill="#a855f7" opacity="0.5"/>
+    <circle cx="1050" cy="240" r="2" fill="#00f0ff" opacity="0.4"/>
+    <circle cx="800" cy="120" r="3" fill="#00f0ff" opacity="0.5"/>
+    <circle cx="850" cy="200" r="2" fill="#ec4899" opacity="0.5"/>
   </g>
 
-  <!-- KG² Shield Logo on the left -->
-  <g transform="translate(60, 75)" filter="url(#glow-subtle)">
-    <polygon points="40,0 80,23 80,70 40,93 0,70 0,23" fill="none" stroke="url(#name-grad)" stroke-width="2" />
-    <polygon points="40,5 74,25 74,67 40,87 6,67 6,25" fill="none" stroke="#00f2fe" stroke-width="0.75" opacity="0.5" />
-    <text x="40" y="55" font-family="'Outfit', 'Inter', system-ui, -apple-system, sans-serif" font-size="28" font-weight="900" fill="url(#name-grad)" text-anchor="middle">KG²</text>
-  </g>
+  <!-- Left accent lines -->
+  <line x1="60" y1="60" x2="60" y2="240" stroke="url(#cyan)" stroke-width="2" opacity="0.3"/>
+  <line x1="66" y1="80" x2="66" y2="220" stroke="url(#purpleAccent)" stroke-width="1" opacity="0.15"/>
 
-  <!-- Decorative Border Accents -->
-  <!-- Top cyber-bar -->
-  <path d="M 40,25 L 200,25 L 210,35 L 350,35" fill="none" stroke="#00f2fe" stroke-width="1.5" opacity="0.3" />
-  <circle cx="40" cy="25" r="2.5" fill="#00f2fe" opacity="0.5" />
-  
-  <!-- Bottom cyber-bar -->
-  <path d="M 760,225 L 600,225 L 590,215 L 450,215" fill="none" stroke="#a154f2" stroke-width="1.5" opacity="0.3" />
-  <circle cx="760" cy="225" r="2.5" fill="#a154f2" opacity="0.5" />
+  <!-- Top decorative bar -->
+  <rect x="90" y="58" width="80" height="2" fill="#00f0ff" opacity="0.4" rx="1"/>
+  <rect x="180" y="58" width="30" height="2" fill="#a855f7" opacity="0.3" rx="1"/>
 
-  <!-- Code brackets / symbols as watermarks -->
-  <text x="180" y="215" font-family="Courier, monospace" font-size="20" fill="#ffffff" opacity="0.03" font-weight="bold">&lt;/&gt;</text>
-  <text x="730" y="200" font-family="Courier, monospace" font-size="20" fill="#ffffff" opacity="0.03" font-weight="bold">{ }</text>
+  <!-- Bottom decorative bar -->
+  <rect x="90" y="240" width="50" height="2" fill="#a855f7" opacity="0.3" rx="1"/>
+  <rect x="150" y="240" width="100" height="2" fill="#00f0ff" opacity="0.2" rx="1"/>
 
-  <!-- Name -->
-  <text x="170" y="100" font-family="'Outfit', 'Inter', system-ui, -apple-system, sans-serif" font-size="34" font-weight="900" fill="url(#name-grad)" letter-spacing="1">
+  <!-- Main name text -->
+  <text x="90" y="120" font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="42" font-weight="800" fill="url(#nameGrad)" letter-spacing="2" filter="url(#textGlow)">
     GANESH GIRIDHAR
   </text>
 
-  <!-- Title / Tagline -->
-  <text x="172" y="130" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff" opacity="0.9" letter-spacing="2">
-    AI SYSTEMS ENGINEER &amp; FULL-STACK DEVELOPER
+  <!-- Role title -->
+  <text x="92" y="155" font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#00f0ff" letter-spacing="4" opacity="0.9">
+    AI SYSTEMS ENGINEER
+  </text>
+  <text x="340" y="155" font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="15" font-weight="300" fill="#ffffff" letter-spacing="4" opacity="0.4">
+    ·
+  </text>
+  <text x="365" y="155" font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#c4b5fd" letter-spacing="4" opacity="0.9">
+    FULL-STACK DEVELOPER
   </text>
 
-  <!-- Brand Slogan on the banner -->
-  <text x="172" y="155" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="400" fill="url(#accent-grad)" letter-spacing="0.5" font-style="italic" opacity="0.9">
-    "Built with obsessive attention to detail. Powered by The Linear Paradigm."
+  <!-- Tagline -->
+  <text x="92" y="190" font-family="'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif" font-size="12" font-weight="400" fill="#94a3b8" letter-spacing="1" font-style="italic">
+    Building intelligent systems with obsessive precision.
   </text>
 
   <!-- Status indicator -->
-  <g transform="translate(172, 175)">
-    <circle cx="5" cy="5" r="3" fill="#05ffc3" filter="url(#glow-subtle)" />
-    <text x="15" y="8" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" opacity="0.55" letter-spacing="1">
-      SYSTEM: ACTIVE // DEPLOYING INTELLIGENT ARCHITECTURES
+  <g transform="translate(92, 210)">
+    <rect width="8" height="8" rx="4" fill="#10b981" opacity="0.9" filter="url(#glow)"/>
+    <text x="16" y="7" font-family="'JetBrains Mono', 'Cascadia Code', 'Fira Code', monospace" font-size="9" font-weight="500" fill="#64748b" letter-spacing="2">
+      OPEN TO OPPORTUNITIES
     </text>
   </g>
 </svg>
