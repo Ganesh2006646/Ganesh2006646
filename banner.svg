@@ -43,7 +43,7 @@
   <rect width="800" height="250" fill="url(#grid)" />
 
   <!-- Abstract Cybernetic Lines / Graph Nodes (The Linear Paradigm) -->
-  <g stroke="#4facfe" stroke-width="0.75" opacity="0.2">
+  <g stroke="#4facfe" stroke-width="0.75" opacity="0.15">
     <line x1="580" y1="50" x2="680" y2="80" />
     <line x1="680" y1="80" x2="630" y2="170" />
     <line x1="630" y1="170" x2="720" y2="120" />
@@ -56,49 +56,56 @@
   </g>
 
   <!-- Glowing Nodes -->
-  <g fill="#00f2fe" opacity="0.7" filter="url(#glow-subtle)">
-    <circle cx="580" cy="50" r="4.5" fill="#00f2fe" />
-    <circle cx="680" cy="80" r="6" fill="#a154f2" />
-    <circle cx="630" cy="170" r="4.5" fill="#00f2fe" />
-    <circle cx="720" cy="120" r="5" fill="#05ffc3" />
-    <circle cx="750" cy="60" r="3.5" fill="#4facfe" />
-    <circle cx="560" cy="200" r="4" fill="#a154f2" />
-    <circle cx="520" cy="110" r="4" fill="#05ffc3" />
+  <g fill="#00f2fe" opacity="0.6" filter="url(#glow-subtle)">
+    <circle cx="580" cy="50" r="4" fill="#00f2fe" />
+    <circle cx="680" cy="80" r="5.5" fill="#a154f2" />
+    <circle cx="630" cy="170" r="4" fill="#00f2fe" />
+    <circle cx="720" cy="120" r="4.5" fill="#05ffc3" />
+    <circle cx="750" cy="60" r="3" fill="#4facfe" />
+    <circle cx="560" cy="200" r="3.5" fill="#a154f2" />
+    <circle cx="520" cy="110" r="3.5" fill="#05ffc3" />
+  </g>
+
+  <!-- KG² Shield Logo on the left -->
+  <g transform="translate(60, 75)" filter="url(#glow-subtle)">
+    <polygon points="40,0 80,23 80,70 40,93 0,70 0,23" fill="none" stroke="url(#name-grad)" stroke-width="2" />
+    <polygon points="40,5 74,25 74,67 40,87 6,67 6,25" fill="none" stroke="#00f2fe" stroke-width="0.75" opacity="0.5" />
+    <text x="40" y="55" font-family="'Outfit', 'Inter', system-ui, -apple-system, sans-serif" font-size="28" font-weight="900" fill="url(#name-grad)" text-anchor="middle">KG²</text>
   </g>
 
   <!-- Decorative Border Accents -->
   <!-- Top cyber-bar -->
-  <path d="M 40,25 L 180,25 L 190,35 L 320,35" fill="none" stroke="#00f2fe" stroke-width="1.5" opacity="0.4" />
-  <circle cx="40" cy="25" r="2.5" fill="#00f2fe" opacity="0.6" />
+  <path d="M 40,25 L 200,25 L 210,35 L 350,35" fill="none" stroke="#00f2fe" stroke-width="1.5" opacity="0.3" />
+  <circle cx="40" cy="25" r="2.5" fill="#00f2fe" opacity="0.5" />
   
   <!-- Bottom cyber-bar -->
-  <path d="M 760,225 L 620,225 L 610,215 L 480,215" fill="none" stroke="#a154f2" stroke-width="1.5" opacity="0.4" />
-  <circle cx="760" cy="225" r="2.5" fill="#a154f2" opacity="0.6" />
+  <path d="M 760,225 L 600,225 L 590,215 L 450,215" fill="none" stroke="#a154f2" stroke-width="1.5" opacity="0.3" />
+  <circle cx="760" cy="225" r="2.5" fill="#a154f2" opacity="0.5" />
 
   <!-- Code brackets / symbols as watermarks -->
-  <text x="50" y="210" font-family="Courier, monospace" font-size="24" fill="#ffffff" opacity="0.04" font-weight="bold">&lt;/&gt;</text>
-  <text x="710" y="205" font-family="Courier, monospace" font-size="24" fill="#ffffff" opacity="0.04" font-weight="bold">{ }</text>
+  <text x="180" y="215" font-family="Courier, monospace" font-size="20" fill="#ffffff" opacity="0.03" font-weight="bold">&lt;/&gt;</text>
+  <text x="730" y="200" font-family="Courier, monospace" font-size="20" fill="#ffffff" opacity="0.03" font-weight="bold">{ }</text>
 
   <!-- Name -->
-  <text x="60" y="105" font-family="'Outfit', 'Inter', system-ui, -apple-system, sans-serif" font-size="38" font-weight="900" fill="url(#name-grad)" letter-spacing="1.5">
+  <text x="170" y="100" font-family="'Outfit', 'Inter', system-ui, -apple-system, sans-serif" font-size="34" font-weight="900" fill="url(#name-grad)" letter-spacing="1">
     GANESH GIRIDHAR
   </text>
 
   <!-- Title / Tagline -->
-  <text x="63" y="138" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#ffffff" opacity="0.9" letter-spacing="2.5">
-    AI ENGINEER &amp; FULL-STACK DEVELOPER
+  <text x="172" y="130" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff" opacity="0.9" letter-spacing="2">
+    AI SYSTEMS ENGINEER &amp; FULL-STACK DEVELOPER
   </text>
 
-  <!-- Secondary Title -->
-  <text x="63" y="165" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="500" fill="url(#accent-grad)" letter-spacing="1.8">
-    THE LINEAR PARADIGM // DIGITAL TWIN CREATOR
+  <!-- Brand Slogan on the banner -->
+  <text x="172" y="155" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="400" fill="url(#accent-grad)" letter-spacing="0.5" font-style="italic" opacity="0.9">
+    "Built with obsessive attention to detail. Powered by The Linear Paradigm."
   </text>
 
   <!-- Status indicator -->
-  <g transform="translate(63, 185)">
-    <circle cx="6" cy="6" r="3.5" fill="#05ffc3" filter="url(#glow-subtle)" />
-    <text x="18" y="10" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#ffffff" opacity="0.65" letter-spacing="1">
-      SYSTEM: ACTIVE // BUILDING COGNITIVE SYSTEMS
+  <g transform="translate(172, 175)">
+    <circle cx="5" cy="5" r="3" fill="#05ffc3" filter="url(#glow-subtle)" />
+    <text x="15" y="8" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" opacity="0.55" letter-spacing="1">
+      SYSTEM: ACTIVE // DEPLOYING INTELLIGENT ARCHITECTURES
     </text>
   </g>
 </svg>

@@ -4,13 +4,16 @@
 
 <p align="center">
   <a href="https://brandofganesh.vercel.app" target="_blank">
-    <img src="https://img.shields.io/badge/deployed-vercel-black?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
+    <img src="https://img.shields.io/badge/Portfolio-0A0A0A?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
   </a>
   <a href="https://www.linkedin.com/in/kankatala-ganesh-giridhar-071876322" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
+  <a href="https://leetcode.com/u/Ganesh2006646/" target="_blank">
+    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" />
+  </a>
   <a href="mailto:kankatalaganeshgiridhar@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
   </a>
 </p>
 
@@ -80,8 +83,8 @@ I engineer high-performance cognitive systems, custom RAG pipelines, and interac
 ### 📊 GitHub Analytics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Ganesh2006646&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f0e26" alt="Ganesh's GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ganesh2006646&layout=compact&theme=tokyonight&hide_border=true&bg_color=0f0e26" alt="Ganesh's Top Languages" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Ganesh2006646&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0f0e26" alt="Ganesh's GitHub Stats" height="195" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ganesh2006646&layout=compact&theme=tokyonight&hide_border=true&bg_color=0f0e26" alt="Ganesh's Top Languages" height="195" />
 </p>
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=Ganesh2006646&theme=tokyonight&hide_border=true&background=0f0e26" alt="Ganesh's GitHub Streak" width="97%" />
@@ -94,5 +97,8 @@ I engineer high-performance cognitive systems, custom RAG pipelines, and interac
 > *"Growth is not a random walk; it is a vector. By aligning every action with a singular direction, we construct a linear path to exceptional engineering."*
 
 <p align="center">
+  <br />
+  <strong>"Built with obsessive attention to detail. Powered by The Linear Paradigm."</strong>
+  <br /><br />
   <sub>Designed with meticulous precision. Powered by Gemini.</sub>
 </p>
